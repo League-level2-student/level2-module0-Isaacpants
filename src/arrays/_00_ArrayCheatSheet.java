@@ -23,13 +23,30 @@ public class _00_ArrayCheatSheet {
 		//7. use a for loop to make every value of the integer array a random number
 		for (int i = 0; i < in.length; i++) {
 			Random r = new Random();
-			//int   r.nextInt;
-			//in[i]=r;
+			
+			in[i]=r.nextInt();
 		}
 		//8. without printing the entire array, print only the smallest number in the array
-		
+		int smallest =Integer.MAX_VALUE;
+		for (int i = 0; i <in.length; i++) {
+			if(in[i]<smallest) {
+				smallest=in[i];
+			}
+			
+		}
+		System.out.println(smallest);
 		//9 print the entire array to see if step 8 was correct
-		
+		for (int i = 0; i <in.length; i++) {
+			System.out.println(i);
+			}
 		//10. print the largest number in the array.
+		int biggest =Integer.MIN_VALUE;
+		for (int i = 0; i <in.length; i++) {
+			if(in[i]>biggest) {
+				biggest=in[i];
+			}
+			
+		}
+		System.out.println(biggest);
 	}
 }
