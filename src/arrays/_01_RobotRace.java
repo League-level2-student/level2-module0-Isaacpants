@@ -17,7 +17,7 @@ public static void main(String[] args) {
 	//3. use a for loop to initialize the robots.
 for (int i = 0; i < r.length; i++) {
 	
-		r[i] = new Robot();
+		r[i] = new Robot("batman");
 		r[i].setSpeed(10);
 		// TODO Auto-generated catch block
 		
